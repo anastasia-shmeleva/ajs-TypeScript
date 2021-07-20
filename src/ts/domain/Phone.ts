@@ -5,5 +5,6 @@ export default class Phone implements Buyable {
         readonly id: number,
         readonly name: string,
         readonly price: number,
+        readonly countable: boolean,
     ) { }
 }
