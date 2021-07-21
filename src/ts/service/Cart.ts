@@ -27,8 +27,8 @@ export default class Cart {
     }
 
     delete(id: number): void {
-        let toDelete = this._items.findIndex((item) => item.id === id);
-        this._items.splice(toDelete, 1);
-        // return this._items.filter(item => item.id !== id);
+        // let toDelete = this._items.findIndex((item) => item.id === id);
+        // this._items.splice(toDelete, 1);
+        this._items = this._items.filter(item => item.id !== id);
     }
 }
